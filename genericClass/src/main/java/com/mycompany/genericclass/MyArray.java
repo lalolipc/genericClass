@@ -3,17 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.genericclass;
-
+package com.mycompany.tp1_genericclass;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  *
  * @author Lec222
  */
-public class MyArray<T extends Comparable> {
-      List<T> list = null;
+public class MyArray <T extends Comparable>{
+     List<T> list = null;
     public MyArray() {
     list=new ArrayList<T>();   
     }
@@ -65,5 +63,4 @@ public class MyArray<T extends Comparable> {
    public T deleteLast(){
        return  list.remove(list.size()-1);
    }
-    
 }
